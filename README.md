@@ -16,3 +16,4 @@ Codility Solutions in Java
    </ul>
    Please Feel Free To Contact me in case of Edits and suggestions.
    Thanks To Blogs' owners Who Gave me the initial Steps to break the ice with codility.
+please feel free to contact me via mail :<strong> sci.maha@gmail.com </strong> or skype :<strong> maha.hamza.profit </strong>
