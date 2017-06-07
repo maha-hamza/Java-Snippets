@@ -13,6 +13,7 @@ Codility Solutions in Java
   <li> PermMissingElements</li>
   <li> PhoneBill</li>
   <li> TapeEquilibrium</li>
+  <li> others ...</li>
    </ul>
    Please Feel Free To Contact me in case of Edits and suggestions.
    Thanks To Blogs' owners Who Gave me the initial Steps to break the ice with codility.
