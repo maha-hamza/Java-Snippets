@@ -1,5 +1,9 @@
 # Codility
 Codility Solutions in Java
+# GeeksforGeeks
+Reimplementation using java 8+ 
+# Other
+
 
 <strong>Find below solution for the following : </strong>
 <ul>
