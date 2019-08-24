@@ -9,6 +9,6 @@ public class AbsDistinct {
 
 	public static int solution(int[] A) {
 
-		return (int) IntStream.of(A).map(e -> Math.abs(e)).distinct().count();
+		return (int) IntStream.of(A).map(Math::abs).distinct().count();
 	}
 }
