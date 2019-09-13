@@ -1,3 +1,4 @@
+package Codility;
 
 public class TieRope {
 	public static void main(String[] args) {

@@ -1,3 +1,5 @@
+package Codility;
+
 import java.util.Arrays;
 
 public class CountNonDivisible {

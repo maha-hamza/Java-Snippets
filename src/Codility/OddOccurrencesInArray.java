@@ -1,3 +1,5 @@
+package Codility;
+
 import java.util.HashSet;
 
 public class OddOccurrencesInArray {

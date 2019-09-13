@@ -1,3 +1,4 @@
+package Codility;
 
 public class PassingCars {
 	public static void main(String[] args) {

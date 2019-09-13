@@ -1,11 +1,13 @@
+package Codility;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.IntStream;
 
 /**
- * Find all pairs in an array of integers that product of a given number
+ * Find all pairs in an array of integers that sum up to a given number
  */
-public class PairsEqualToProduct {
+public class PairsEqualToSum {
 
     static class Pairs {
         private int x;
@@ -27,7 +29,7 @@ public class PairsEqualToProduct {
 
         IntStream.range(0, listOfSum.size())
                 .forEach(i -> IntStream.range(i, listOfSum.size())
-                        .filter(j -> i != j && listOfSum.get(i) * listOfSum.get(j) == sum)
+                        .filter(j -> i != j && listOfSum.get(i) + listOfSum.get(j) == sum)
                         .forEach(j -> pairs.add(new Pairs(listOfSum.get(i), listOfSum.get(j))))
                 );
 
@@ -40,16 +42,17 @@ public class PairsEqualToProduct {
     }
 
     public static void main(String[] args) {
-        print(findPairs(400, List.of(10, 20, 9, 40)));
+        print(findPairs(6, List.of(1, 5, 7, -1)));
         System.out.println("------------------");
 
-        print(findPairs(1906, List.of(10, 20, 9, 40)));
+        print(findPairs(6, List.of(1, 5, 7, -1, 5)));
         System.out.println("------------------");
 
-        print(findPairs(400, List.of(-10, 20, 9, -40)));
+        print(findPairs(2, List.of(1, 1, 1, 1)));
         System.out.println("------------------");
 
-        print(findPairs(-400, List.of(-10, 20, 9, 40,-10)));
+        print(findPairs(11, List.of(10, 12, 10, 15, -1, 7, 6,
+                5, 4, 2, 1, 1, 1)));
         System.out.println("------------------");
     }
 

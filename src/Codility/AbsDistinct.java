@@ -1,3 +1,5 @@
+package Codility;
+
 import java.util.stream.IntStream;
 
 public class AbsDistinct {
