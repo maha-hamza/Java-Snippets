@@ -13,7 +13,7 @@ import java.util.stream.IntStream;
 public class SellStatistics {
 
     public static void main(String[] args) throws IOException {
-        var data = parseFile("./data.txt");
+        var data = parseFile("./data2.txt");
         calculateTotalNumberOfProductSold(data).forEach(System.out::println);
     }
 
@@ -59,10 +59,11 @@ public class SellStatistics {
     private static List<Integer> calculateTotalNumberOfProductSold(List<SellStatisticInput> input) {
         List<Integer> result = new ArrayList<>();
 
+        AtomicInteger count = new AtomicInteger(0);
+
         IntStream.range(0, input.size()).forEach(index -> {
             var currentItem = input.get(index);
             if (currentItem.getType().equals(StatisticEnum.Q)) {
-                AtomicInteger count = new AtomicInteger(0);
                 input.subList(0, index)
                         .stream()
                         .filter(before -> before.getType().equals(StatisticEnum.S))
@@ -72,7 +73,7 @@ public class SellStatistics {
                             }
                         });
                 result.add(count.intValue());
-
+                count.set(0);
             }
         });
 
