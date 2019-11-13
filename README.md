@@ -28,6 +28,7 @@
 <li>Distinct.java</li>
 <li>PermMissingElements.java</li>
 <li>PairsEqualToProduct.java</li>
+<li>SellSttistics.java</li>
    </ul>
    Please Feel Free To Contact me in case of Edits and suggestions.
    Thanks To Blogs' owners Who Gave me the initial Steps to break the ice with codility.
