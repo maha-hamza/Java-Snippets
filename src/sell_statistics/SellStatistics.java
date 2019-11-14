@@ -13,7 +13,7 @@ import java.util.stream.IntStream;
 public class SellStatistics {
 
     public static void main(String[] args) throws IOException {
-        var data = parseFile("./data2.txt");
+        var data = parseFile("./data.txt");
         calculateTotalNumberOfProductSold(data).forEach(System.out::println);
     }
 
@@ -21,7 +21,8 @@ public class SellStatistics {
         var entries = Files.readAllLines(Paths.get(path));
 
         List<SellStatisticInput> input = new ArrayList<>();
-        entries.subList(1, entries.size())
+        entries.stream()
+                .skip(1)
                 .forEach(line -> {
                             var elements = line.split(" ");
                             var s_e_day = checkAndSplit(elements[1]);
